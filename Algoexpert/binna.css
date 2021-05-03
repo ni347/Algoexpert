@@ -1,0 +1,14 @@
+.BB{
+    justify-content: center;
+    margin-left: 400px;
+}
+
+.Binna{
+    font-size: 20px;
+    color: #fff;
+    background-color: blueviolet;
+    box-sizing: 20px 20px;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 5px;
+}
