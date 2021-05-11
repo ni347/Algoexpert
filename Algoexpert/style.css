@@ -54,12 +54,6 @@ div{
     height: 100%;
     background-color: rgba(50,50,93,.1);
 }
-.codeEditorSideBar>ul{
-    position: absolute;
-    left: -28px;
-    top: 4px;
-    list-style: none;
-}
 ul{
     display: block;
     margin-block-start: 1em;
@@ -67,12 +61,6 @@ ul{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-}
-.codeEditorSideBar li{
-    text-align: right;
-    font-weight: 400;
-    color: rgba(50,50,93,.5);
-    font-size: 14px;
 }
 li{
     display: block;
@@ -90,6 +78,20 @@ li{
     font-family: "Source Code Pro","Helvetica","Arial",sans-serif;
     font-size: 14px;
 }
+.codeEditorSideBar li{
+    text-align: left;
+    font-weight: 400;
+    color: rgba(50,50,93,.5);
+    font-size: 14px;
+}
+
+.codeEditorSideBar>ul{
+    position: absolute;
+    left: -28px;
+    top: 4px;
+    list-style: none;
+}
+
 
 .codeEditor .const{
     color: #7411ad;
@@ -138,30 +140,65 @@ li{
     flex-direction: column;
     list-style: none;
 }
-.button{
+button:focus:not(:focus-visible){
+    outline: none;
+}
+.button:hover{
+    color: #02203c;
+}
+.buttonbb{
     background-color: #fff;
     box-shadow: 0 2px 4px rgb(50 50 93 / 10%);
-    color: #02203c;
+}
+.button{
     font-weight: 600;
     font-size: 14px;
     padding: 10px 15px;
+    transition: background-color .4s,box-shadow .4s,color .4s,border-color 3s;
     border: none;
     border-color: #f6f9fc;
     border-radius: 2px;
+    cursor: pointer;
+    flex: 0 0 auto;
     text-align: left;
     margin: 0 0 0 20px;
+}
+.button1:hover{
+    color: #02203c;
+}
+.buttonbb1{
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgb(50 50 93 / 10%);
 }
 .button1{
     font-weight: 600;
     font-size: 14px;
     padding: 10px 15px;
+    transition: background-color .4s,box-shadow .4s,color .4s,border-color 3s;
     border: none;
     border-color: #f6f9fc;
     border-radius: 2px;
+    cursor: pointer;
+    flex: 0 0 auto;
     text-align: left;
     margin: 0 0 0 20px;
     background-color: transparent;
     color: #626ee3;
+}
+button{
+    line-height: inherit;
+}
+button{
+    appearance: auto;
+    -webkit-writing-mode: horizontal -tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    align-items: flex-start; 
 }
 
 .BB{
@@ -223,6 +260,7 @@ h4{
     position: absolute;
     z-index: 1;
 }
+
 .logoup{
     position: relative;
     width: 1400px;
@@ -230,12 +268,39 @@ h4{
     margin: 0 0 20px 0;
     flex: 0 0 auto;
 }
+
+/* .nic{
+    animation-name: move1;
+} */
+.nik{
+    animation-name: movee1;
+    left: 100%;
+}
 .logoupimg{
     display: flex;
     align-items: center;
-    position: absolute;
+    position:absolute;
     width: 100%;
     height: 100%;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/* @keyframes move1{
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: -100%;
+    }
+} */
+@keyframes movee1{
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
 }
 .logoupimage{
     flex: 1 1 200px;
@@ -249,12 +314,38 @@ h4{
     margin: 0 0 20px 0;
     flex: 0 0 auto;
 }
+.nic1{
+    animation-name: move2;
+    left: -100%;
+}
+.nik1{
+    animation-name: movee2;
+}
 .logodoimg{
     display: flex;
     align-items: center;
     position: absolute;
     width: 100%;
     height: 100%;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes move2{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+@keyframes movee2{
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 100%;
+    }
 }
 .logodoimage{
     flex: 1 1 200px;
