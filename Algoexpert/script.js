@@ -1,16 +1,25 @@
-function algo()
-{
-    // let ele = document.getElementById("team");
-    let element = document.getElementById("nikhil");
-    if(element.classList.contains("buttonbb"))
-      element.classList.contains("buttonbb");
-    element.classList.add("buttonbb");  
+function studyWithAlgo() {
+  let kiran = document.getElementById("kiran");
+  kiran.classList.remove("buttonbb");
+
+  let buttoncb = document.getElementById("nikhil");
+  buttoncb.classList.add("buttonbb");
+
+  let kumar = document.getElementById("OtherResource");
+  let vats = document.getElementById("studyWithALgoExpert");
+  kumar.classList.remove("teamChangeDisplay");
+  vats.classList.add("teamChangeDisplay");
 }
 
-function algoexp()
-{
-  let element = document.getElementById("kiran");
-  if(element.classList.contains("buttonbb"))
-    element.classList.contains("buttonbb");
-  element.classList.add("buttonbb");
+function studyWithOther() {
+  let Nikhil = document.getElementById("nikhil");
+  Nikhil.classList.remove("buttonbb");
+
+  let buttoncb = document.getElementById("kiran");
+  buttoncb.classList.add("buttonbb");
+
+  let kumar = document.getElementById("OtherResource");
+  let vats = document.getElementById("studyWithALgoExpert");
+  vats.classList.remove("teamChangeDisplay");
+  kumar.classList.add("teamChangeDisplay");
 }
