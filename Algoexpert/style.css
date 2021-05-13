@@ -91,6 +91,9 @@ li{
     top: 4px;
     list-style: none;
 }
+ul{
+    margin: 0;
+}
 
 
 .codeEditor .const{
@@ -135,6 +138,10 @@ li{
     color: #2078d6;
     font-weight: 600;
 }
+.codeEditor .comment{
+    color: #babec4;
+    font-weight: 600;
+}
 .StudyWith{
     display: flex;
     flex-direction: column;
@@ -143,16 +150,29 @@ li{
 button:focus:not(:focus-visible){
     outline: none;
 }
-.button:hover{
+.buttonn:hover{
     color: #02203c;
 }
 .buttonbb{
     background-color: #fff;
     box-shadow: 0 2px 4px rgb(50 50 93 / 10%);
 }
-.button{
+.buttonn{
     font-weight: 600;
     font-size: 14px;
+    padding: 10px 15px;
+    transition: background-color .4s,box-shadow .4s,color .4s,border-color 3s;
+    border: none;
+    border-color: #f6f9fc;
+    border-radius: 2px;
+    cursor: pointer;
+    flex: 0 0 auto;
+    text-align: left;
+    margin: 0 0 0 20px;
+}
+.mystyle1{
+    font-weight: 600;
+    font-size: 100px;
     padding: 10px 15px;
     transition: background-color .4s,box-shadow .4s,color .4s,border-color 3s;
     border: none;
@@ -176,7 +196,7 @@ button:focus:not(:focus-visible){
     padding: 10px 15px;
     transition: background-color .4s,box-shadow .4s,color .4s,border-color 3s;
     border: none;
-    border-color: #f6f9fc;
+    border-color: #fff;
     border-radius: 2px;
     cursor: pointer;
     flex: 0 0 auto;
@@ -269,9 +289,9 @@ h4{
     flex: 0 0 auto;
 }
 
-/* .nic{
+.nic{
     animation-name: move1;
-} */
+}
 .nik{
     animation-name: movee1;
     left: 100%;
@@ -286,14 +306,22 @@ h4{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-/* @keyframes move1{
+.amazon{
+    filter: grayscale(100%) brightness(0%);
+    user-select: none;
+    pointer-events: none;
+    opacity: .2;
+    object-fit: contain;
+    width: 100%;
+}
+@keyframes move1{
     0%{
         left: 0%;
     }
     100%{
         left: -100%;
     }
-} */
+}
 @keyframes movee1{
     0%{
         left: 100%;
@@ -330,6 +358,14 @@ h4{
     animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+}
+.consensys{
+    filter: grayscale(100%) brightness(0%);
+    user-select: none;
+    pointer-events: none;
+    opacity: .2;
+    object-fit: contain;
+    width: 100%;
 }
 @keyframes move2{
     0%{
