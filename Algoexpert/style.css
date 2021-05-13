@@ -1,60 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Ubuntu:wght@300&display=swap');
-
-*, *::before,*::after{
+*, *::before, *::after {
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: #f6f9fc;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
     line-height: 1.42857143;
     font-size: 16px;
-    font-family: "Open Sans","Helvetica","Arial",sans-serif;
+    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
 }
-div{
+
+div {
     display: block;
 }
-.PageWrapper{
+
+.PageWrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
-.Background{
+
+.Background {
     padding: 100px 20px;
-    overflow:hidden;
+    overflow: hidden;
     position: relative;
 }
-.BetterWay{
+
+.BetterWay {
     margin: 0 0 20px 0;
     text-align: center;
     font-size: 35px;
-    font-family: "Ubuntu","Helvetica","Arial", sans-serif;
+    font-family: "Ubuntu", "Helvetica", "Arial", sans-serif;
     color: #02203c;
     font-weight: 400;
     line-height: 1.3;
 }
-.BoxBackground{
+
+.BoxBackground {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.codeEditor{
+
+.codeEditor {
     position: relative;
     width: 700px;
     height: 250px;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgb(50 50 93 / 10%) ;
+    box-shadow: 0 2px 4px rgb(50 50 93 / 10%);
     text-align: center;
+    display: none;
 }
-.codeEditorSideBar{
+
+.codeEditorSideBar {
     position: relative;
     width: 40px;
     height: 100%;
-    background-color: rgba(50,50,93,.1);
+    background-color: rgba(50, 50, 93, .1);
 }
-ul{
+
+ul {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -62,119 +71,136 @@ ul{
     margin-inline-end: 0px;
     padding-inline-start: 40px;
 }
-li{
+
+li {
     display: block;
 }
-.codeEditor>ul{
+
+.codeEditor>ul {
     position: absolute;
     left: 12px;
     top: 4px;
     list-style: none;
 }
-.codeEditor li{
+
+.codeEditor li {
     text-align: left;
     font-weight: 600;
-    color: rgba(50,50,93,.8);
-    font-family: "Source Code Pro","Helvetica","Arial",sans-serif;
-    font-size: 14px;
-}
-.codeEditorSideBar li{
-    text-align: left;
-    font-weight: 400;
-    color: rgba(50,50,93,.5);
+    color: rgba(50, 50, 93, .8);
+    font-family: "Source Code Pro", "Helvetica", "Arial", sans-serif;
     font-size: 14px;
 }
 
-.codeEditorSideBar>ul{
+.codeEditorSideBar li {
+    text-align: left;
+    font-weight: 400;
+    color: rgba(50, 50, 93, .5);
+    font-size: 14px;
+}
+
+.codeEditorSideBar>ul {
     position: absolute;
     left: -28px;
     top: 4px;
     list-style: none;
 }
-ul{
+
+ul {
     margin: 0;
 }
 
-
-.codeEditor .const{
+.codeEditor .const {
     color: #7411ad;
     font-weight: 600;
 }
-.codeEditor span{
-    font-family: "Source Code Pro","Helvetica","Arial",sans-serif;
+
+.codeEditor span {
+    font-family: "Source Code Pro", "Helvetica", "Arial", sans-serif;
 }
-.codeEditor .you{
+
+.codeEditor .you {
     color: #ad6111;
     font-weight: 600;
 }
-.codeEditor .new{
+
+.codeEditor .new {
     color: #7411ad;
     font-weight: 600;
 }
-.codeEditor .SWEngineer{
+
+.codeEditor .SWEngineer {
     color: #a0a510;
     font-weight: 600;
 }
-.codeEditor .emptyLine{
+
+.codeEditor .emptyLine {
     height: 20px;
 }
-.codeEditor .let{
+
+.codeEditor .let {
     color: #7411ad;
     font-weight: 600;
 }
-.codeEditor .true{
+
+.codeEditor .true {
     color: #ad6111;
     font-weight: 600;
 }
-.codeEditor .while{
+
+.codeEditor .while {
     color: #7411ad;
     font-weight: 600;
 }
-.codeEditor .youu{
+
+.codeEditor .youu {
     color: #c41d1d;
     font-weight: 600;
 }
-.codeEditor .function{
+
+.codeEditor .function {
     color: #2078d6;
     font-weight: 600;
 }
-.codeEditor .comment{
+
+.codeEditor .comment {
     color: #babec4;
     font-weight: 600;
 }
-.StudyWith{
+
+.StudyWith {
     display: flex;
     flex-direction: column;
     list-style: none;
 }
-button:focus:not(:focus-visible){
+
+button:focus:not(:focus-visible) {
     outline: none;
 }
-.buttonn:hover{
+
+.buttonn:hover {
     color: #02203c;
 }
-.buttonbb{
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgb(50 50 93 / 10%);
-}
-.buttonn{
+
+.buttonn {
     font-weight: 600;
     font-size: 14px;
     padding: 10px 15px;
-    transition: background-color .4s,box-shadow .4s,color .4s,border-color 3s;
+    transition: background-color .4s, box-shadow .4s, color .4s, border-color 3s;
     border: none;
     border-color: #f6f9fc;
     border-radius: 2px;
     cursor: pointer;
     flex: 0 0 auto;
     text-align: left;
+    background-color: transparent;
     margin: 0 0 0 20px;
 }
-.mystyle1{
+
+.mystyle1 {
     font-weight: 600;
     font-size: 100px;
     padding: 10px 15px;
-    transition: background-color .4s,box-shadow .4s,color .4s,border-color 3s;
+    transition: background-color .4s, box-shadow .4s, color .4s, border-color 3s;
     border: none;
     border-color: #f6f9fc;
     border-radius: 2px;
@@ -183,18 +209,21 @@ button:focus:not(:focus-visible){
     text-align: left;
     margin: 0 0 0 20px;
 }
-.button1:hover{
+
+.button1:hover {
     color: #02203c;
 }
-.buttonbb1{
+
+/* .buttonbb1 {
     background-color: #fff;
     box-shadow: 0 2px 4px rgb(50 50 93 / 10%);
-}
-.button1{
+} */
+
+.button1 {
     font-weight: 600;
     font-size: 14px;
     padding: 10px 15px;
-    transition: background-color .4s,box-shadow .4s,color .4s,border-color 3s;
+    transition: background-color .4s, box-shadow .4s, color .4s, border-color 3s;
     border: none;
     border-color: #fff;
     border-radius: 2px;
@@ -205,10 +234,17 @@ button:focus:not(:focus-visible){
     background-color: transparent;
     color: #626ee3;
 }
-button{
+
+.buttonbb {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgb(50 50 93 / 10%);
+}
+
+button {
     line-height: inherit;
 }
-button{
+
+button {
     appearance: auto;
     -webkit-writing-mode: horizontal -tb !important;
     text-rendering: auto;
@@ -218,15 +254,16 @@ button{
     text-indent: 0px;
     text-shadow: none;
     display: inline-block;
-    align-items: flex-start; 
+    align-items: flex-start;
 }
 
-.BB{
+.BB {
     padding: 100px 20px;
     overflow: hidden;
     position: relative;
 }
-.Nickb{
+
+.Nickb {
     background-color: #fff;
     max-width: 1200px;
     border-radius: 4px;
@@ -236,28 +273,32 @@ button{
     display: flex;
     flex-direction: column;
 }
-.outcomes{
+
+.outcomes {
     margin: 0 0 20px 0;
     text-align: center;
     font-size: 35px;
-    font-family: "Ubuntu","Helvetica","Arial",sans-serif;
+    font-family: "Ubuntu", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
     color: #02203c;
     line-height: 1.3;
 }
-h2{
+
+h2 {
     margin-block-start: 0.83em;
     margin-inline-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-.companies{
+
+.companies {
     text-align: center;
     margin: 0 0 50px 0;
     font-size: 18px;
 }
-h4{
-    font-family: "Open Sans","Helvetica","Arial",sans-serif;
+
+h4 {
+    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
     color: #445d6e;
     font-weight: 400;
     display: block;
@@ -266,22 +307,24 @@ h4{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-.logo{
+
+.logo {
     position: relative;
     overflow: hidden;
     flex: 0 0 230px;
 }
-.logolside{
+
+.logolside {
     left: 0;
     right: 0;
-    background-image: linear-gradient(to right,white 30%,rgba(255,255,255,0));
+    background-image: linear-gradient(to right, white 30%, rgba(255, 255, 255, 0));
     height: 100%;
     width: 40px;
     position: absolute;
     z-index: 1;
 }
 
-.logoup{
+.logoup {
     position: relative;
     width: 1400px;
     height: 100px;
@@ -289,24 +332,27 @@ h4{
     flex: 0 0 auto;
 }
 
-.nic{
+.nic {
     animation-name: move1;
 }
-.nik{
+
+.nik {
     animation-name: movee1;
     left: 100%;
 }
-.logoupimg{
+
+.logoupimg {
     display: flex;
     align-items: center;
-    position:absolute;
+    position: absolute;
     width: 100%;
     height: 100%;
     animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-.amazon{
+
+.amazon {
     filter: grayscale(100%) brightness(0%);
     user-select: none;
     pointer-events: none;
@@ -314,42 +360,49 @@ h4{
     object-fit: contain;
     width: 100%;
 }
-@keyframes move1{
-    0%{
+
+@keyframes move1 {
+    0% {
         left: 0%;
     }
-    100%{
+    100% {
         left: -100%;
     }
 }
-@keyframes movee1{
-    0%{
+
+@keyframes movee1 {
+    0% {
         left: 100%;
     }
-    100%{
+    100% {
         left: 0%;
     }
 }
-.logoupimage{
+
+.logoupimage {
     flex: 1 1 200px;
     min-width: 0;
     margin: 20px;
 }
-.logodo{
+
+.logodo {
     position: relative;
     width: 1400px;
     height: 100px;
     margin: 0 0 20px 0;
     flex: 0 0 auto;
 }
-.nic1{
+
+.nic1 {
     animation-name: move2;
     left: -100%;
 }
-.nik1{
+
+.nik1 {
     animation-name: movee2;
 }
-.logodoimg{
+
+.logodoimg {
     display: flex;
     align-items: center;
     position: absolute;
@@ -359,7 +412,8 @@ h4{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
-.consensys{
+
+.consensys {
     filter: grayscale(100%) brightness(0%);
     user-select: none;
     pointer-events: none;
@@ -367,33 +421,45 @@ h4{
     object-fit: contain;
     width: 100%;
 }
-@keyframes move2{
-    0%{
+
+@keyframes move2 {
+    0% {
         left: -100%;
     }
-    100%{
+    100% {
         left: 0%;
     }
 }
-@keyframes movee2{
-    0%{
+
+@keyframes movee2 {
+    0% {
         left: 0%;
     }
-    100%{
+    100% {
         left: 100%;
     }
 }
-.logodoimage{
+
+.logodoimage {
     flex: 1 1 200px;
     min-width: 0;
     margin: 20px;
 }
-.logorside{
+
+.logorside {
     left: 0;
     right: 0;
-    background-image: linear-gradient(to right,white 30%,rgba(255,255,255,0));
+    background-image: linear-gradient(to right, white 30%, rgba(255, 255, 255, 0));
     height: 100%;
     width: 40px;
     position: absolute;
     z-index: 1;
+}
+/* 
+.team {
+    display: block;
+} */
+
+.teamChangeDisplay {
+    display: block;
 }
